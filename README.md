@@ -9,10 +9,10 @@
 conventional way ?
 --------------------
 
-+ Open terminal and clone the repo from github as below or download the project from github location, https://github.com/dreamweiver/money-waster-app-angular-8
++ Open terminal and clone the repo from github as below or download the project from github location, https://github.com/dreamweiver/money-waster-app
 
 ```
-root-dir $ git clone https://github.com/dreamweiver/money-waster-app-angular-8.git
+root-dir $ git clone https://github.com/dreamweiver/money-waster-app.git
 ```
 
 + navigate to root directory of the project and run the below script to install on dependencies of the project
@@ -37,10 +37,10 @@ http://localhost:3900
 Using Docker ?
 --------------------
 
-+ Open terminal and clone the repo from github as below
++ Open terminal and clone the repo from github as below or download the project from github location, https://github.com/dreamweiver/money-waster-app
 
 ```
-root-dir $ git clone https://github.com/dreamweiver/money-waster-app-angular-8.git
+root-dir $ git clone https://github.com/dreamweiver/money-waster-app.git
 ```
 
 + navigate to root directory of the project and run the below script to run docker build command
