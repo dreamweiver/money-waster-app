@@ -1,0 +1,41 @@
+@import '../styles/variables';
+
+.cont{
+	.cont__header {
+		width: 100%;
+ 	}
+
+ 	.cont__display-name{
+ 		font-size:12px;
+ 	}
+
+	.cont__events {
+		overflow-y : auto;
+		height: 500px;
+	}
+
+	.cont__spacer {
+	  flex: 1 1 auto;
+	}
+}
+
+.login-cont {
+	height: calc(100vh - 50px);
+
+	.login-cont__btn-img {
+		width: 24px;
+	}
+}
+
+footer {
+	height: 50px;
+	background-color: $dark;
+	color: $normal-color;
+	padding: 15px;
+	bottom :0;
+	z-index:21;
+	font-size:12px;
+	text-align:center;
+	position:sticky;
+}
+

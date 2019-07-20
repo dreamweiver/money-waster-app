@@ -1,0 +1,15 @@
+@import '../styles/variables';
+
+.page-not-found-cont {
+	padding: 15px;
+
+	.page-not-found-cont__img {
+		width:100%;
+		height: 75%;
+	}
+	.page-not-found-cont__msg {
+		font-size: 30px;
+		text-align: center;
+		color: $dark-grey;
+	}
+}

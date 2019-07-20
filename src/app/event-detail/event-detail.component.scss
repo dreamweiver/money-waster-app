@@ -1,0 +1,277 @@
+@import '../styles/variables';
+
+::ng-deep .mat-form-field-underline {
+    display: none;
+}
+
+.evt-detail {
+
+	.evt-detail__fld {
+		margin-right: 10px;
+	}
+
+    .evt-detail__app-title {
+        position: absolute;
+        margin-top: 40px;
+        width: 276px;
+        display: block;
+        max-width: 100%;
+    }
+
+    .evt_detail__title {
+        font-weight:bold;
+    }
+
+    .evt-detail__input {
+        border-radius: 15px;
+        border: 1px solid $disabled;
+        background-color: $fld-bg-color;
+        padding:10px;
+    }
+
+    .evt-detail__desc-fld {
+        position: absolute;
+        left: 50px;
+
+        * {
+            margin-left: 10px;
+        }
+    }
+
+    .dull-txt {
+        color: $disabled;
+    }
+
+    .evt-detail__stats {
+
+        .evt-detail__stats_lbl {
+            color: $gold-color;
+        }
+
+        .evt-detail__stats_value {
+            font-size:28px;
+
+            input {
+                color: $normal-color;
+            }
+        }
+    }
+}
+
+.shell, .shell-wide {
+    min-width: 300px;
+    max-width: 480px;
+}
+
+.shell-wide1 {
+    max-width: 723px;
+}
+
+.shell-wide, .shell-fluid {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.range-50 {
+    margin-bottom: -50px;
+}
+
+.range > [class*='cell'] {
+    -ms-flex: 0 0 auto;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+    -webkit-flex-basis: 100%;
+    flex-basis: 100%;
+    max-width: 100%;
+}
+
+[class*="cell-"] {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+html .range-50 > * {
+    margin-bottom: 50px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.blick-wrap {
+    position: relative;
+    display: inline-block;
+    font-size: 0;
+    line-height: 0;
+}
+
+img {
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+}
+
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+
+.img-wrap {
+    width:400px;
+}
+
+.blick-overlay[data-blick-overlay='ipad'] {
+    background-image: url(./../../assets/images/blick-01.png);
+}
+
+.blick-overlay {
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 32.16%;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.blick-overlay, .blick-content {
+    position: absolute;
+}
+
+.blick-content {
+    position: absolute;
+    overflow: hidden;
+    top: 4.3%;
+    bottom: 39.5%;
+    left: 4.1%;
+    right: 4.1%;
+}
+
+.blick-content img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+/*stats section*/
+.section-way-point {
+    position: relative;
+    z-index: 20;
+
+    .way-point {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: calc(100% - 2px);
+        display: flex;
+        cursor: pointer;
+
+        .icon {
+            font-size: 30px;
+            position: absolute;
+            bottom: -3px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: #ffffff;
+            transition: 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55) all;
+            display: inline-block;
+            line-height: 1;
+            text-align: center;
+        }
+
+        .mdi {
+            display: inline-block;
+            font: normal normal normal 24px/1 "Material Design Icons";
+            font-size: inherit;
+            text-rendering: auto;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            transform: translate(0, 0);
+        }
+
+        svg {
+            overflow: hidden;
+            vertical-align: middle;
+
+            path {
+                fill: inherit;
+            }
+        }
+    }
+}
+
+.section-variant-2 {
+    padding: 60px 0;
+}
+
+.bg-secondary-2 {
+    background-color: #6d0eb1;
+    fill: #6d0eb1;
+}
+
+.bg-secondary-2, .breadcrumbs-custom-light {
+    color: #ffffff;
+}
+
+.bg-secondary-2 .way-point > svg {
+    fill: inherit;
+}
+
+.range {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.range {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex: 0 1 auto;
+    -webkit-flex: 0 1 auto;
+    flex: 0 1 auto;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.range > .cell-xs-12 {
+    -webkit-flex-basis: 100%;
+    flex-basis: 100%;
+    max-width: 100%;
+}
+
+.bg-secondary-2 .divider-default, .breadcrumbs-custom-light .divider-default {
+    opacity: 1;
+}
+
+h3 + .divider {
+    margin-top: 20px;
+}
+
+.divider-default {
+    background: linear-gradient(to right, #ed1c94 50%, #981df0 120%);
+}
+
+.divider {
+    display: inline-block;
+    border: 0;
+    font-size: 0;
+    line-height: 0;
+    height: 3px;
+    max-width: 100px;
+    width: 100%;
+}
+
+.range + .range {
+    margin-top: 60px;
+}

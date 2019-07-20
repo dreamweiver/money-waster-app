@@ -1,0 +1,25 @@
+<section *ngIf="!isLoggedIn"  class="login-cont">
+	<mat-grid-list  cols="1"  rowHeight="5:1" >
+	  <mat-grid-tile>
+	  	<button  mat-raised-button (click)="auth.login()"> <img src="assets/images/google.svg" alt="Google" class="login-cont__btn-img"
+			 matTooltip="Google+" matTooltipPosition="above"> Login with Google</button>
+	  </mat-grid-tile>
+	</mat-grid-list>
+</section>
+
+
+<div *ngIf="auth.user$ | async as user" class="cont">
+	<mat-toolbar>
+	  <mat-toolbar-row class="cont__header">
+	    <span> <span class="cont__display-name">Logged in as</span> {{ user.displayName }}</span>
+	   
+	    <span class="cont__spacer"></span>
+	    	
+		<button mat-stroked-button  (click)="auth.logout()">Logout</button>
+	  </mat-toolbar-row>
+	</mat-toolbar>
+</div>
+
+<event-detail *ngIf="isLoggedIn" [event]="activeEvent"></event-detail>
+
+<footer>© 2019 Money Waster - powered by Google Calendar</footer>

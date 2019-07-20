@@ -1,0 +1,122 @@
+<div  class="evt-detail">
+  <section>
+      <mat-grid-list cols="2" rowHeight="100px">
+        <mat-grid-tile colspan="2" rowspan="1">
+          <h1>Money Waster Meeting Counter</h1>
+          <div class="evt-detail__app-title divider divider-default"></div>
+        </mat-grid-tile>
+        <mat-grid-tile colspan="1" rowspan="1">
+          <div class="evt_detail__title">
+            <p *ngIf="meetingTitle"> {{meetingTitle}}</p>
+            <i *ngIf="!meetingTitle" class="dull-txt"> No Meeting Title/Summary</i>
+          </div>
+        </mat-grid-tile>
+        <mat-grid-tile colspan="1" rowspan="1">
+          <mat-chip-list aria-label="Meeting status">
+            <mat-chip color="accent" [selected]="attendeesCount ? true : false">{{attendeesCount ? 'Meeting In Progress' : 'No Active Meeting'}}</mat-chip>
+          </mat-chip-list>
+        </mat-grid-tile >
+        <mat-grid-tile colspan="2" rowspan="1">
+          <div class="evt-detail__desc-fld">
+            <b>Meeting Description/Agenda :  </b>    
+            <p *ngIf="meetingDesc"> {{meetingDesc}}</p>
+            <i *ngIf="!meetingDesc" class="dull-txt"> No Meeting Description</i>
+          </div>
+        </mat-grid-tile>
+      </mat-grid-list>
+
+      
+
+    <mat-grid-list cols="3" rowHeight="3:1">
+      <mat-grid-tile>
+         <mat-form-field class="evt-detail__fld">
+          <mat-label>Number of Attendees</mat-label>
+          <div class="evt-detail__input">
+            <input matInput  value="{{attendeesCount || 0}}" disabled>
+          </div>
+        </mat-form-field>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <mat-form-field class="evt-detail__fld">
+          <mat-label>Avg.Daily Cost Rate</mat-label>
+          <div class="evt-detail__input">
+             <input matInput value="{{!!avgDailyRates && avgDailyRates.avgDailyCostRate  || 0 }}" disabled>
+          </div>
+        </mat-form-field>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <mat-form-field class="evt-detail__fld">
+          <mat-label>Avg.Daily Revenue Rate</mat-label>
+           <div class="evt-detail__input">
+               <input matInput value="{{!!avgDailyRates && avgDailyRates.avgDailyRevenueRate || 0 }}" disabled>
+           </div>
+        </mat-form-field>
+      </mat-grid-tile>
+    </mat-grid-list>
+
+     
+    <div class="shell-wide">
+      <div class="range range-lg-right range-50">
+        <div class="cell-lg-5 text-center">
+          <div class="image-position-01">
+            <div class="blick-wrap">
+              <img class="image-wrap" src="assets/images/ipad-01-1360x1233.png" alt="" width="1360" height="1233">
+            <div class="blick-overlay" data-blick-overlay="ipad"></div>
+            <div class="blick-content"><img src="assets/images/blick-content-01.png" alt=""></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-variant-2 bg-secondary-2 section-way-point">
+    <div class="way-point">
+      <svg version="1.1" x="0px" y="0px" width="253px" height="38px" enable-background="new 0 0 253 38" xml:space="preserve">
+        <path style="clip-path: url(#gel)" fill-rule="evenodd" clip-rule="evenodd" d="M252,36.001C199.397,36.001,176,0,125.815,0                                             C76,0,52.988,36.001,0,36.001C4.336,40.465,273.563,36.001,252,36.001z"></path>
+      </svg><span class="icon mdi"></span>
+    </div>
+    <div class="shell-wide shell-wide1">
+      <div class="range text-center">
+        <div class="cell-xs-12">
+          <h3>Live Status of Meeting</h3>
+          <div class="divider divider-default"></div>
+        </div>
+      </div>
+      <mat-grid-list cols="2" rowHeight="100px" class="evt-detail__stats">
+        <mat-grid-tile>
+          <mat-form-field class="evt-detail__fld">
+            <mat-label class="evt-detail__stats_lbl">Meeting Running Since</mat-label>
+            <div class="evt-detail__stats_value">
+              <input matInput  value="{{meetingSince || 'NA' }}" disabled>
+            </div>
+          </mat-form-field>
+        </mat-grid-tile>
+        <mat-grid-tile>
+          <mat-form-field class="evt-detail__fld">
+            <mat-label class="evt-detail__stats_lbl">Number of Attendees</mat-label>
+            <div class="evt-detail__stats_value">
+              <input matInput  value="{{attendeesCount || 0 }}" disabled>
+            </div>
+          </mat-form-field>
+        </mat-grid-tile>
+        <mat-grid-tile>
+          <mat-form-field class="evt-detail__fld">
+            <mat-label class="evt-detail__stats_lbl">Potential Revenue</mat-label>
+            <div class="evt-detail__stats_value">
+              <input matInput  value="{{!!liveDailyRates && liveDailyRates.avgDailyRevenueRate || 0 }}" disabled>
+            </div>
+          </mat-form-field>
+        </mat-grid-tile>
+        <mat-grid-tile>
+          <mat-form-field class="evt-detail__fld">
+            <mat-label class="evt-detail__stats_lbl">Cost of the Meeting</mat-label>
+            <div class="evt-detail__stats_value">
+              <input matInput  value="{{!!liveDailyRates && liveDailyRates.avgDailyCostRate || 0 }}" disabled>
+            </div>
+          </mat-form-field>
+        </mat-grid-tile>
+      </mat-grid-list>
+    </div>
+  </section>
+</div>
