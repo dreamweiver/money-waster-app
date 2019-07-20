@@ -12,19 +12,19 @@ conventional way ?
 + Open terminal and clone the repo from github as below or download the project from github location, https://github.com/dreamweiver/money-waster-app
 
 ```
-root-dir $ git clone https://github.com/dreamweiver/money-waster-app.git
+root-dir> git clone https://github.com/dreamweiver/money-waster-app.git
 ```
 
 + navigate to root directory of the project and run the below script to install on dependencies of the project
 
 ```
-money-waster-app-angular-8 $ npm install
+money-waster-app> $ npm install
 ```
 
 + run the below npm script to build the application.
 
 ```
-money-waster-app-angular-8 $ npm start
+money-waster-app> $ npm start
 ```
 
 + after sucessful build. Open your favourite browser and type in the url as below below
@@ -40,19 +40,19 @@ Using Docker ?
 + Open terminal and clone the repo from github as below or download the project from github location, https://github.com/dreamweiver/money-waster-app
 
 ```
-root-dir $ git clone https://github.com/dreamweiver/money-waster-app.git
+root-dir> git clone https://github.com/dreamweiver/money-waster-app.git
 ```
 
 + navigate to root directory of the project and run the below script to run docker build command
 
 ```
-money-waster-app-angular-8 $ docker build --rm  -f Dockerfile -t money-waster-app:v1 . 
+money-waster-app> docker build --rm  -f Dockerfile -t money-waster-app:v1 . 
 ```
 
 + After successfully completion of the docker build, run the below docker command to run the docker image
 
 ```
-money-waster-app-angular-8 $ docker run --rm  -d -p 80:80 money-waster-app:v1 
+money-waster-app> docker run --rm  -d -p 80:80 money-waster-app:v1 
 ```
 
 + Open your favourite browser and go to this below url
